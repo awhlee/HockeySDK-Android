@@ -205,6 +205,10 @@ public class FeedbackActivity extends Activity implements OnClickListener {
         if (extras != null) {
             mUrl = extras.getString(EXTRA_URL);
             mForceNewThread = extras.getBoolean(EXTRA_FORCE_NEW_THREAD);
+
+            /** Astro (alee) **/
+            mForceNewThread = true;
+
             initialUserName = extras.getString(EXTRA_INITIAL_USER_NAME);
             initialUserEmail = extras.getString(EXTRA_INITIAL_USER_EMAIL);
 
