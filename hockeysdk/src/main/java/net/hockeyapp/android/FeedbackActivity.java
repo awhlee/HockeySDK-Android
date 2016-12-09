@@ -206,7 +206,7 @@ public class FeedbackActivity extends Activity implements OnClickListener {
             mUrl = extras.getString(EXTRA_URL);
             mForceNewThread = extras.getBoolean(EXTRA_FORCE_NEW_THREAD);
 
-            /** Astro (alee) **/
+            /** Astro (alee) - We want to force a new feedback everytime **/
             mForceNewThread = true;
 
             initialUserName = extras.getString(EXTRA_INITIAL_USER_NAME);

@@ -106,16 +106,18 @@ public class PrefsUtil {
      * @return a string with name, email, and subject
      */
     public String getNameEmailFromPrefs(Context context) {
-        if (context == null) {
-            return null;
-        }
+        /** Astro (alee) - We don't want these cached values**/
 
-        mNameEmailSubjectPrefs = context.getSharedPreferences(Util.PREFS_NAME_EMAIL_SUBJECT, 0);
-        if (mNameEmailSubjectPrefs == null) {
-            return null;
-        }
-
-        return mNameEmailSubjectPrefs.getString(Util.PREFS_KEY_NAME_EMAIL_SUBJECT, null);
+        return null;
+//        if (context == null) {
+//            return null;
+//        }
+//        mNameEmailSubjectPrefs = context.getSharedPreferences(Util.PREFS_NAME_EMAIL_SUBJECT, 0);
+//        if (mNameEmailSubjectPrefs == null) {
+//            return null;
+//        }
+//
+//        return mNameEmailSubjectPrefs.getString(Util.PREFS_KEY_NAME_EMAIL_SUBJECT, null);
     }
 
 }
